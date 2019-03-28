@@ -6,10 +6,8 @@ function pushData(){
         triangleSides.push(document.getElementById("userInputSide2").value);
         triangleSides.push(document.getElementById("userInputSide3").value);
 
-    
-    //alert(triangleSides);
     triangleSides.sort((a, b) => b - a);
-    alert(triangleSides);
+    
     var changeTriangleSides = triangleSides.map(Number);
 
     tmp = new Set(changeTriangleSides);
