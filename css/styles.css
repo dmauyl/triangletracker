@@ -1,5 +1,24 @@
 form {
-    max-width: 200px;
+    max-width: 100%;
     margin: 0;
     padding: 0 5px;
   }
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 85%;
+    background-color: #333639;
+    color: #F9FAFA;
+    
+  }
+  
+  button {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
+  p  {
+    display: block;
+    font-size: 2em;
+  }
+  #container{
+      padding-top: 20px;
+  }
+  /* #root { height: 100%; } */
