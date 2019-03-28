@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/tri-styles.css">
+
     <title>Triangle Tracker</title>
 </head>
 <body>
     <div class="container">
+        <h1>Welcome to the triangle tracker</h1>
+        <hr>
         <form action="#">
-            <input type="number" placeholder="Enter length of triangle: side 1 " required>
-            <input type="number" placeholder="Enter length of triangle: side 2 " required>
-            <input type="number" placeholder="Enter length of triangle: side 3 " required>
+            <input class="userInput" id="userInput" type="number" placeholder="Enter length of triangle: side 1 " required>
+            <input class="userInput" id="userInput" type="number" placeholder="Enter length of triangle: side 2 " required>
+            <input class="userInput" id="userInput" type="number" placeholder="Enter length of triangle: side 3 " required><br>
+            <hr>
+            <input type="submit" onclick="pushData()" value="Submit">
 
         </form>
+        <script src="scripts/triangle.js"></script>
     </div>
 </body>
 </html>
