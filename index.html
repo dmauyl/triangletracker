@@ -14,14 +14,17 @@
         <h1>Welcome to the triangle tracker</h1>
         <hr>
         <form action="#">
-            <input class="userInput" id="userInput" type="number" placeholder="Enter length of triangle: side 1 " required>
-            <input class="userInput" id="userInput" type="number" placeholder="Enter length of triangle: side 2 " required>
-            <input class="userInput" id="userInput" type="number" placeholder="Enter length of triangle: side 3 " required><br>
+            <input class="userInput" id="userInputSide1" type="number" placeholder="Enter length of triangle: side 1 " required>
+            <input class="userInput" id="userInputSide2" type="number" placeholder="Enter length of triangle: side 2 " required>
+            <input class="userInput" id="userInputSide3" type="number" placeholder="Enter length of triangle: side 3 " required><br>
             <hr>
             <input type="submit" onclick="pushData()" value="Submit">
 
         </form>
         <script src="scripts/triangle.js"></script>
+        <hr>
+        <h3>The results</h3>
+        <p id="results"></p>
     </div>
 </body>
 </html>
