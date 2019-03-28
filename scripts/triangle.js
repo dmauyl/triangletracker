@@ -1,10 +1,11 @@
 function pushData(){
     var userInputs = document.getElementsByTagName("input");
-    var triSides = [];
+    var triangleSides = [];
     for (var i=0;i<userInputs.length;i++){
-        triSides.push(document.getElementById("userInput").value);
+        triangleSides.push(document.getElementById("userInput").value);
         
     }
-    alert(triSides);
+    alert(triangleSides);
+    triangleSides.sort((a, b) => b - a);
     
 }
