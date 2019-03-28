@@ -1,13 +1,13 @@
 function pushData(){
     var userInputs = document.getElementsByTagName("input");
     var triangleSides = [];
-    // for (var i=0;i<userInputs.length;i++){
+    
         triangleSides.push(document.getElementById("userInputSide1").value);
         triangleSides.push(document.getElementById("userInputSide2").value);
         triangleSides.push(document.getElementById("userInputSide3").value);
 
-    // }
-    alert(triangleSides);
+    
+    //alert(triangleSides);
     triangleSides.sort((a, b) => b - a);
     alert(triangleSides);
     var changeTriangleSides = triangleSides.map(Number);
@@ -28,10 +28,11 @@ function pushData(){
     }
     else if(tmp.size === 3){
         if(changeTriangleSides[0] >= (changeTriangleSides[1] + changeTriangleSides[2])){
-            alert("Ouch, that can't form a triangle");
-        }
+            document.getElementById("results").innerHTML = "Ouch, that can't form a triangle";
+            }
         else{
-            alert("Wow, that  a scalene triangle");
+            
+            document.getElementById("results").innerHTML = "Wow, that  a scalene triangle";
         }
     
     }    
