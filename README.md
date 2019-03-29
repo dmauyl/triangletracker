@@ -20,6 +20,7 @@ Javascript, HTML, CSS
 mikodongo@gmail.com
 
 # License & Copyright
+Copyright © 2019, Michael Odongo. This project is licensed under the MIT License -
 
 
 
