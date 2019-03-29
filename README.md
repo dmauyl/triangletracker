@@ -16,7 +16,7 @@ The app then displays triangle type to the user.
 Javascript, HTML, CSS
 
 # Live link
-
+https://dmauyl.github.io/triangletracker/
 
 
 # Contact information
