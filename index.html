@@ -16,15 +16,16 @@
         <hr>
         <div class="row">
         <div class="col-sm-6">
-                <input class="userInput" id="userInputSide1" name="side1" type="number" min="1" placeholder="Enter triangle length:" required>
+                <input class="userInput" id="userInputSide1" name="sides" type="number" min="1" placeholder="Enter triangle length:" required>
                 <label for="side1">Side 1</label>
-                <input class="userInput" id="userInputSide2" name="side2" type="number" min="1" placeholder="Enter length of triangle: side 2 " required>
+                <input class="userInput" id="userInputSide2" name="sides" type="number" min="1" placeholder="Enter length of triangle: side 2 " required>
                 <label for="side2">Side 2</label>
-                <input class="userInput" id="userInputSide3" name="side3" type="number" min="1" placeholder="Enter length of triangle: side 3 " required>
+                <input class="userInput" id="userInputSide3" name="sides" type="number" min="1" placeholder="Enter length of triangle: side 3 " required>
                 <label for="side3">Side 3</label>
                 <hr>
-                <input type="submit" onclick="pushData()" value="Submit">
-
+                <input type="submit" onclick="pushData()" value="Submit the input">
+                <hr>
+                <button onclick="document.getElementsByTagName('userInput').value = ''">Clear input field</button>
         </div>
         <div class="col-sm-6">
                 <p id="results"></p> 
