@@ -16,7 +16,7 @@ form {
     font-family: 'Segoe UI', Tahoma, sans-serif;
   }
   p  {
-    display: block;
+    display: inline;
     font-size: 2em;
   }
   #container{
@@ -30,17 +30,27 @@ form {
   }
 input {
   display: inline-block;
-  width: 100%;
+  width: 65%;
   position: relative;
-/*  top: -2em;*/
+ top: 0.5em;
 }
 
 label {
   display: inline-block;
-  width: 100%;
+  width: 65%;
   margin-right: .5em;
   padding-top: 0.5em;
   font-display: block;
 }
+hr.top-hr:before { 
+    display: block; 
+    content: ""; 
+    height: 30px; 
+    margin-top: -31px; 
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 0 0 1px 0; 
+    border-radius: 20px; 
+  }
 
   /* #root { height: 100%; } */
