@@ -28,6 +28,10 @@ function pushData(){
         {
             document.getElementById("results").innerHTML = "Yippee!!That's an isosceles triangle.";
         }
+        else if(changeTriangleSides[0] < (changeTriangleSides[1] + changeTriangleSides[2]))
+        {
+            document.getElementById("results").innerHTML = "Yes, that's a scalene triangle";
+        }
     
     else {
             document.getElementById("results").innerHTML = "Ouch, that can't form a triangle";
