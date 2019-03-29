@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +10,42 @@
 
     <title>Triangle Tracker</title>
 </head>
+
 <body>
+    <!-- page container -->
     <div class="container">
         <hr>
         <h1 class="mb-2">Welcome to the triangle tracker</h1>
         <hr>
         <div class="row">
-        <div class="col-sm-6">
-                <input class="userInput" id="userInputSide1" name="sides" type="number" min="1" placeholder="Enter triangle length:" required>
+            <div class="col-sm-6">
+                <!-- input elements to get user info -->
+                <input class="userInput" id="userInputSide1" name="sides" type="number" min="1"
+                    placeholder="Enter triangle length:" required>
                 <label for="side1">Side 1</label>
-                <input class="userInput" id="userInputSide2" name="sides" type="number" min="1" placeholder="Enter length of triangle: side 2 " required>
+                <input class="userInput" id="userInputSide2" name="sides" type="number" min="1"
+                    placeholder="Enter length of triangle: side 2 " required>
                 <label for="side2">Side 2</label>
-                <input class="userInput" id="userInputSide3" name="sides" type="number" min="1" placeholder="Enter length of triangle: side 3 " required>
+                <input class="userInput" id="userInputSide3" name="sides" type="number" min="1"
+                    placeholder="Enter length of triangle: side 3 " required>
                 <label for="side3">Side 3</label>
                 <hr>
                 <input type="submit" onclick="pushData()" value="Submit the input">
                 <hr>
-                <button onclick="document.getElementsByTagName('userInput').value = ''">Clear input field</button>
+                <!-- <button onclick="document.getElementsByTagName('userInput').value = ''">Clear input field</button> -->
+            </div>
+            <div class="col-sm-6">
+                <p id="results"></p>
+            </div>
         </div>
-        <div class="col-sm-6">
-                <p id="results"></p> 
-        </div>
-    </div>    
-    <hr>         
-    <footer><a href="https://dmauyl.github.io/triangletracker/index.html" rel="noreferrer noopener" target="_blank">Michael Odongo</a></footer>          
+        <hr>
+        <footer><a href="https://dmauyl.github.io/triangletracker/index.html" rel="noreferrer noopener"
+                target="_blank">Michael Odongo</a></footer>
     </div>
-    
-    
-        <script src="scripts/triangle.js"></script>
-        
+
+
+    <script src="scripts/triangle.js"></script>
+
 </body>
+
 </html>
