@@ -1,7 +1,9 @@
 function pushData(){
+    
     var userInputs = document.getElementsByTagName("input");
     var triangleSides = [];
-    
+    // for (var i=0;i< userInputs.length;i++)
+    // triangleSides.push(document.getElementsByName.name.valueOf);
         triangleSides.push(document.getElementById("userInputSide1").value);
         triangleSides.push(document.getElementById("userInputSide2").value);
         triangleSides.push(document.getElementById("userInputSide3").value);

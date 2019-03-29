@@ -12,19 +12,31 @@
 <body>
     <div class="container">
         <hr>
-        <h1>Welcome to the triangle tracker</h1>
+        <h1 class="mb-2">Welcome to the triangle tracker</h1>
         <hr>
-        <form action="#">
-            <input class="userInput" id="userInputSide1" type="number" placeholder="Enter length of triangle: side 1 " required>
-            <input class="userInput" id="userInputSide2" type="number" placeholder="Enter length of triangle: side 2 " required>
-            <input class="userInput" id="userInputSide3" type="number" placeholder="Enter length of triangle: side 3 " required><br>
-            <hr>
-            <input type="submit" onclick="pushData()" value="Submit">
+        <div class="row">
+        <div class="col-sm-6">
+                <form action="#">
+                        <input class="userInput" id="userInputSide1" name="side1" type="number" min="1" placeholder="Enter triangle length:" required>
+                        <label for="side1">side One</label>
+                        <input class="userInput" id="userInputSide2" name="side2" type="number" min="1" placeholder="Enter length of triangle: side 2 " required>
+                        <label for="side2">side Two</label>
+                        <input class="userInput" id="userInputSide3" name="side3" type="number" min="1" placeholder="Enter length of triangle: side 3 " required>
+                        <label for="side3">side Three</label>
+                        <hr>
+                        <input type="submit" onclick="pushData()" value="Submit">
+            
+                    </form>
+        </div>
+    
+        <div class="col-sm-6" id="right-side">
 
-        </form>
+                <p id="results"></p>
+        </div>
+    </div>
         <script src="scripts/triangle.js"></script>
-        <hr>        
-        <p id="results"></p>
+              
+        
     </div>
 </body>
 </html>

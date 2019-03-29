@@ -7,7 +7,8 @@ form {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     font-size: 85%;
     background-color: #333639;
-    color: #F9FAFA;
+    /* color: #F9FAFA; */
+    color: #F7DC6F
     
   }
   
@@ -21,4 +22,25 @@ form {
   #container{
       padding-top: 20px;
   }
+  form > div > label {
+    position: absolute;
+  }
+  form > div {
+    position: relative;
+  }
+input {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+/*  top: -2em;*/
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  margin-right: .5em;
+  padding-top: 0.5em;
+  font-display: block;
+}
+
   /* #root { height: 100%; } */
