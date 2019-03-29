@@ -15,30 +15,31 @@
         <h1 class="mb-2">Welcome to the triangle tracker</h1>
         <hr>
         <div class="row">
-        <div class="col-sm-12">
-                <form action="#">
-                        <input class="userInput" id="userInputSide1" name="side1" type="number" min="1" placeholder="Enter triangle length:" required>
-                        <label for="side1">Side 1</label>
-                        <input class="userInput" id="userInputSide2" name="side2" type="number" min="1" placeholder="Enter length of triangle: side 2 " required>
-                        <label for="side2">Side 2</label>
-                        <input class="userInput" id="userInputSide3" name="side3" type="number" min="1" placeholder="Enter length of triangle: side 3 " required>
-                        <label for="side3">Side 3</label>
-                        <hr>
-                        <input type="submit" onclick="pushData()" value="Submit">
-            
-                    </form>
-                    
+        <div class="col-sm-6">
+                <input class="userInput" id="userInputSide1" name="side1" type="number" min="1" placeholder="Enter triangle length:" required>
+                <label for="side1">Side 1</label>
+                <input class="userInput" id="userInputSide2" name="side2" type="number" min="1" placeholder="Enter length of triangle: side 2 " required>
+                <label for="side2">Side 2</label>
+                <input class="userInput" id="userInputSide3" name="side3" type="number" min="1" placeholder="Enter length of triangle: side 3 " required>
+                <label for="side3">Side 3</label>
+                <hr>
+                <input type="submit" onclick="pushData()" value="Submit">
+
         </div>
-           
+        <div class="col-sm-6">
+                <p id="results"></p> 
+        </div>
+    </div>
                 
+
+                    
                 
-        
+            
+                
+                  
     </div>
     <hr>
-    <p id="results"></p>
+    
         <script src="scripts/triangle.js"></script>
-              
-        
-    </div>
 </body>
 </html>

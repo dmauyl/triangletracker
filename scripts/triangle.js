@@ -7,9 +7,7 @@ function pushData(){
     if(side1 !== "" && side2 !== "" && side3 !== "")
     {
     var triangleSides = [];
-    // for (var i=0;i< userInputs.length;i++)
-    // triangleSides.push(document.getElementsByName.name.valueOf);
-        triangleSides.push(document.getElementById("userInputSide1").value);
+       triangleSides.push(document.getElementById("userInputSide1").value);
         triangleSides.push(document.getElementById("userInputSide2").value);
         triangleSides.push(document.getElementById("userInputSide3").value);
 
@@ -21,25 +19,21 @@ function pushData(){
     if (tmp.size === 1) {
         document.getElementById("results").innerHTML = "Perfecto!!  That's equilateral triangle";
     }
-    else if (tmp.size === 2) {
-        if(changeTriangleSides[0] >= (changeTriangleSides[1] + changeTriangleSides[2]))
+    else if (changeTriangleSides[0] >= (changeTriangleSides[1] + changeTriangleSides[2]))
         {
             document.getElementById("results").innerHTML = "Ouch, that can't form a triangle";
-        }else 
+            
+        }else if (changeTriangleSides[1]===changeTriangleSides[2])
         
         {
             document.getElementById("results").innerHTML = "Yippee!!That's an isosceles triangle.";
         }
-    }
-    else if(tmp.size === 3){
-        if(changeTriangleSides[0] >= (changeTriangleSides[1] + changeTriangleSides[2])){
+    
+    else {
             document.getElementById("results").innerHTML = "Ouch, that can't form a triangle";
             }
-        else{
-            
-            document.getElementById("results").innerHTML = "Wow, that  a scalene triangle";
-        }
-    
     }    
+else{
+    document.getElementById("results").innerHTML = "Error!!The Length for all the triangle sides";
 }
 }
