@@ -15,9 +15,12 @@ The app then displays triangle type to the user.
 # Technologies used
 Javascript, HTML, CSS
 
+# Live link
+
+
 
 # Contact information
-mikodongo@gmail.com
+dmauyl@gmail.com
 
 # License & Copyright
 Copyright © 2019, Michael Odongo. This project is licensed under the MIT License -
