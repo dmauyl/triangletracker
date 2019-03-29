@@ -1,6 +1,11 @@
 function pushData(){
     
     var userInputs = document.getElementsByTagName("input");
+    var side1 = document.getElementById("userInputSide1").value;
+    var side2 = document.getElementById("userInputSide2").value;
+    var side3 = document.getElementById("userInputSide1").value;
+    if(side1 !== "" && side2 !== "" && side3 !== "")
+    {
     var triangleSides = [];
     // for (var i=0;i< userInputs.length;i++)
     // triangleSides.push(document.getElementsByName.name.valueOf);
@@ -36,4 +41,5 @@ function pushData(){
         }
     
     }    
+}
 }
