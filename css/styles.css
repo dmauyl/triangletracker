@@ -8,7 +8,8 @@ form {
     font-size: 85%;
     background-color: #333639;
     /* color: #F9FAFA; */
-    color: #F7DC6F
+    color: #F7DC6F;
+    /* background-image: url(../images/right-side-image.png) */
     
   }
   
@@ -19,9 +20,9 @@ form {
     display: inline;
     font-size: 2em;
   }
-  #container{
+  /* #container{
       padding-top: 20px;
-  }
+  } */
   form > div > label {
     position: absolute;
   }
@@ -52,5 +53,6 @@ hr.top-hr:before {
     border-width: 0 0 1px 0; 
     border-radius: 20px; 
   }
-
-  /* #root { height: 100%; } */
+#right-side{
+    background-image: url(../images/right-side-image.png);
+}
