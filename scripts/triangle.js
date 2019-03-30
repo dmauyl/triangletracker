@@ -33,7 +33,7 @@ function pushData() {
                 else if (changeTriangleSides[0] >= (changeTriangleSides[1] + changeTriangleSides[2])) {
                     document.getElementById("results").innerHTML = "<strong>No!</strong><br> That can't form a triangle";
                     //check isosceles   
-                } else if ((changeTriangleSides[0] === changeTriangleSides[1])) {
+                } else if ((changeTriangleSides[0] === changeTriangleSides[1])||(changeTriangleSides[2]===changeTriangleSides[1])) {
                     document.getElementById("results").innerHTML = "<strong>Yes!</strong><br>That's an isosceles triangle.";
                 }//check scalene
                 else if (changeTriangleSides[0] < (changeTriangleSides[1] + changeTriangleSides[2])) {
