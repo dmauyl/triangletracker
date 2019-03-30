@@ -35,7 +35,7 @@ function pushData(){
                     {
                         document.getElementById("results").innerHTML = "<strong>No!</strong><br> That can't form a triangle";
                         
-                    }else if (changeTriangleSides[1]===changeTriangleSides[2])
+                    }else if ((changeTriangleSides[1]===changeTriangleSides[2])||(changeTriangleSides[2] === changeTriangleSides[0]) ||(changeTriangleSides[0]===changeTriangleSides[1]) )
                     
                     {
                         document.getElementById("results").innerHTML = "<strong>Yes!</strong><br>That's an isosceles triangle.";
