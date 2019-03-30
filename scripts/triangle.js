@@ -26,6 +26,7 @@ function pushData(){
                 var changeTriangleSides = triangleSides.map(Number);
             
                 tmp = new Set(changeTriangleSides);
+                alert(changeTriangleSides);
                 //check equilateral
                 if (tmp.size === 1) {
                     document.getElementById("results").innerHTML = "<strong>Perfecto!</strong><br>That's equilateral triangle";
@@ -34,12 +35,12 @@ function pushData(){
                 else if (changeTriangleSides[0] >= (changeTriangleSides[1] + changeTriangleSides[2]))
                     {
                         document.getElementById("results").innerHTML = "<strong>No!</strong><br> That can't form a triangle";
-                        
-                    }else if ((changeTriangleSides[1]===changeTriangleSides[2])||(changeTriangleSides[2] === changeTriangleSides[0]) ||(changeTriangleSides[0]===changeTriangleSides[1]) )
+                     //check isosceles   
+                    }else if ((changeTriangleSides[0]===changeTriangleSides[1])) 
                     
                     {
                         document.getElementById("results").innerHTML = "<strong>Yes!</strong><br>That's an isosceles triangle.";
-                    }
+                    }//check scalene
                     else if(changeTriangleSides[0] < (changeTriangleSides[1] + changeTriangleSides[2]))
                     {
                         document.getElementById("results").innerHTML = "<strong>Yes!</strong><br>That's a scalene triangle";
