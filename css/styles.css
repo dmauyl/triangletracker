@@ -62,4 +62,11 @@ img {
 .user-story{
   color: aliceblue;
   font-size: 100%;
+  /* font-family: 'Segoe UI', Tahoma, sans-serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#results {
+  color: aliceblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
 }

@@ -28,34 +28,34 @@ function pushData(){
                 tmp = new Set(changeTriangleSides);
                 //check equilateral
                 if (tmp.size === 1) {
-                    document.getElementById("results").innerHTML = "Perfecto!!  That's equilateral triangle";
+                    document.getElementById("results").innerHTML = "<strong>Perfecto!</strong><br>That's equilateral triangle";
                 }
                 //check no triangle
                 else if (changeTriangleSides[0] >= (changeTriangleSides[1] + changeTriangleSides[2]))
                     {
-                        document.getElementById("results").innerHTML = "Ouch, that can't form a triangle";
+                        document.getElementById("results").innerHTML = "<strong>No!</strong><br> That can't form a triangle";
                         
                     }else if (changeTriangleSides[1]===changeTriangleSides[2])
                     
                     {
-                        document.getElementById("results").innerHTML = "Yippee!!That's an isosceles triangle.";
+                        document.getElementById("results").innerHTML = "<strong>Yes!</strong><br>That's an isosceles triangle.";
                     }
                     else if(changeTriangleSides[0] < (changeTriangleSides[1] + changeTriangleSides[2]))
                     {
-                        document.getElementById("results").innerHTML = "Yes, that's a scalene triangle";
+                        document.getElementById("results").innerHTML = "<strong>Yes!</strong><br>That's a scalene triangle";
                     }
                 
                 else {
-                        document.getElementById("results").innerHTML = "Ouch, that can't form a triangle";
+                        document.getElementById("results").innerHTML = "<strong>Ouch</strong>.<br> Not triangle at all";
                         }
                 
         }
         //invalid values by user    
     }else{
-        document.getElementById("results").innerHTML = "Error!!The Length cannot be zero or negative";
+        document.getElementById("results").innerHTML = "<strong>Error!</strong><br> Length cannot be zero or negative";
     }
    }    
 else{
-    document.getElementById("results").innerHTML = "Error!!Invalid input.";
+    document.getElementById("results").innerHTML = "<strong>Error!</strong> <br>That's invalid input.";
 }
 }
