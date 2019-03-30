@@ -26,7 +26,7 @@ function pushData(){
                 var changeTriangleSides = triangleSides.map(Number);
             
                 tmp = new Set(changeTriangleSides);
-                alert(changeTriangleSides);
+                
                 //check equilateral
                 if (tmp.size === 1) {
                     document.getElementById("results").innerHTML = "<strong>Perfecto!</strong><br>That's equilateral triangle";
