@@ -1,3 +1,6 @@
+function reloadPage() {
+    location.reload();
+  }
 function pushData(){
     // get data from the input
     var userInputs = document.getElementsByTagName("input");
@@ -47,7 +50,7 @@ function pushData(){
                         }
                 
         }
-        //invalid values by user
+        //invalid values by user    
     }else{
         document.getElementById("results").innerHTML = "Error!!The Length cannot be zero or negative";
     }

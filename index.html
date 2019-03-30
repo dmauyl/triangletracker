@@ -16,6 +16,8 @@
         <hr>
         <h1 class="mb-2">Welcome to the triangle tracker</h1>
         <hr>
+        <p class="user-story">Do you want know whether a triangle is isosceles, equilateral, scalene or NOT a triangle at all. Please enter the length values of the three sides of your triangle in the below fields.</p>
+        
         <div class="row">
             <div class="col-sm-6 col-md-6">
                 <!-- input elements to get user info -->
@@ -28,12 +30,14 @@
                 <input class="userInput" id="userInputSide3" name="sides" type="number" min="1"
                     placeholder="Enter length of triangle: side 3 " required>
                 <label for="side3">Side 3</label>
-                <input type="submit" onclick="pushData()" value="Submit the input">
-                
+                <input class="submit" type="submit" onclick="pushData()" value="Submit the input">
+                <button onclick="reloadPage()"> Reset or Clear </button>
+
             </div>
             <div class="col-sm-6 col-md-6" id="right-side">
-                    <h6>See the type of triangle</h6>
-                <p>This an web application that allow</p>
+                    <h6>See the type of triangle produced.</h6>
+                    <p id="results"></p>
+                
                 
 
             </div>
@@ -42,8 +46,7 @@
             <div class="col-sm-12   col-md-12">
 
                     
-                    <br>
-                    <p id="results"></p>
+                    
 
                     <footer class="page-footer font-small teal pt-4">
                             <div class="footer-copyright text-center py-3">© 2019 Copyright:

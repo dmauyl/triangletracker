@@ -10,6 +10,7 @@
   
   button {
     font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin-top: 1em;
   }
  
 input {
@@ -18,6 +19,7 @@ input {
   position: relative;
 
 }
+input .
 
 label {
   display: inline-block;
@@ -37,7 +39,7 @@ hr.top-hr:before {
     border-radius: 20px; 
   }
 #right-side{
-    background-image: url(../images/right-s-image.png);
+    background-image: url(../images/right-image.png);
     background-size: 100%;
     background-repeat: inherit;
 }
@@ -56,4 +58,8 @@ img {
 }
 .col-md-12, .col-sm-12 {
   padding-top: 15px;
+}
+.user-story{
+  color: aliceblue;
+  font-size: 100%;
 }
