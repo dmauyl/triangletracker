@@ -5,68 +5,71 @@
     /* color: #F9FAFA; */
     color: #F7DC6F;
     /* background-image: url(../images/right-side-image.png) */
-    
   }
-  
+
   button {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     margin-top: 1em;
   }
- 
-input {
-  display: inline-block;
-  width: 98%;
-  position: relative;
 
-}
-input .
-
-label {
-  display: inline-block;
-  width: 98%;
-  margin-right: .5em;
-  padding-top: 0.5em;
-  font-display: block;
-}
-hr.top-hr:before { 
-    display: block; 
-    content: ""; 
-    height: 30px; 
-    margin-top: -31px; 
-    border-style: solid; 
-    border-color: #8c8b8b; 
-    border-width: 0 0 1px 0; 
-    border-radius: 20px; 
+  input {
+    display: inline-block;
+    width: 98%;
+    position: relative;
   }
-#right-side{
+
+  input . label {
+    display: inline-block;
+    width: 98%;
+    margin-right: .5em;
+    padding-top: 0.5em;
+    font-display: block;
+  }
+
+  hr.top-hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+  }
+
+  #right-side {
     background-image: url(../images/right-image.png);
     background-size: 100%;
     background-repeat: inherit;
-}
-.col-sm-6 {
+  }
+
+  .col-sm-6 {
     max-width: 100%;
-}
-@media (min-width: 576px) .col-sm-6 {
-    
+  }
+
+  @media (min-width: 576px) .col-sm-6 {
     max-width: 100%;
     min-width: 0;
-}
-img {
-  width: 330px;
-  max-width: 100%; 
-  max-height: 274px; 
-}
-.col-md-12, .col-sm-12 {
-  padding-top: 15px;
-}
-.user-story{
-  color: aliceblue;
-  font-size: 100%;
-  /* font-family: 'Segoe UI', Tahoma, sans-serif; */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-#results {
-  color: aliceblue;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
 
-}
+  img {
+    width: 330px;
+    max-width: 100%;
+    max-height: 274px;
+  }
+
+  .col-md-12, .col-sm-12 {
+    padding-top: 15px;
+  }
+
+  .user-story {
+    color: aliceblue;
+    font-size: 100%;
+    /* font-family: 'Segoe UI', Tahoma, sans-serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+
+  #results {
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
